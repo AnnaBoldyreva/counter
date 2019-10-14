@@ -1,3 +1,9 @@
 .reset{
 display: inline;
+
+}
+button{
+    padding: 7px;
+    border: 1px solid #34495e;
+    border-radius: 5px;
 }
