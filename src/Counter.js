@@ -34,10 +34,12 @@ class Counter extends React.Component{
   render = () => {
     return (
         <div className="App">
-          <div className='border'>
+          <div>
+            <div className='border'>
           <Screen data={this.state.currentValue}/>
           <Increment data={this.state} increment={this.increment}/>
           <Reset data={this.state} reset={this.reset}/>
+          </div>
           </div>
 
         </div>
