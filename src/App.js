@@ -7,7 +7,7 @@ class App extends React.Component{
 
     state = {
         currentValue: [],
-        maxValue: '',
+        maxValue: [],
         initialValue: 0
     };
 
@@ -27,15 +27,21 @@ class App extends React.Component{
     };
 
     increment = (currentValue)=> {
-        debugger;
         let newVal = currentValue + 1;
         this.setState(
-            {currentValue: newVal}
+            {currentValue: newVal }
         );
         if (this.state.currentValue === this.state.maxValue){
 
         }
     };
+
+    // increment = (newStartValue) => {
+    //     let newVal = newStartValue + 1;
+    //     this.setState({
+    //         currentValue: newVal
+    //     })
+    // };
 
     reset = ()=>{
         this.setState({currentValue: this.state.initialValue})

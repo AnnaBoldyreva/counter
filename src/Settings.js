@@ -37,7 +37,7 @@ setSettings = () => {
         <div className="App">
           <div>
             <div className='border'>
-                max value: <input type="number" name="quantity" min="1" max="10" onChange={this.onChangeMaxValue} value={this.state.maxValue}
+                max value: <input type="number" name="quantity" min="1" max="11" onChange={this.onChangeMaxValue} value={this.state.maxValue}
             />
                 <br/>
                 start value: <input type="number" name="quantity" min="0" max="10" id='firstInput' onChange={this.onChangeStartValue} value={this.state.currentValue}/>
