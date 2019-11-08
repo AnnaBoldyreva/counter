@@ -4,8 +4,8 @@ import styles from './Increment.module.css'
 
 class Increment extends React.Component{
     incButtonClick = () => {
-        if (this.props.data.currentValue !== this.props.data.maxValue){
-            this.props.increment(this.props.data.currentValue)
+        if (this.props.state.currentValue !== this.props.state.maxValue){
+            this.props.increment(this.props.state.currentValue)
         }
     };
 

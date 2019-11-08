@@ -5,8 +5,14 @@ class Settings extends React.Component{
 
 
 
+state = {
+  maxValue : '',
+  startValue: ''
+};
 
-
+setSettings = () => {
+    alert('heyhey')
+};
 
 
   render = () => {
@@ -14,11 +20,11 @@ class Settings extends React.Component{
         <div className="App">
           <div>
             <div className='border'>
-                max value: <input type="number" name="quantity" min="1" max="5"/>
+                max value: <input type="number" name="quantity" min="1" max="10" />
                 <br/>
-                start value: <input type="number" name="quantity" min="0" max="5"/>
+                start value: <input type="number" name="quantity" min="0" max="10"/>
                 <br/>
-                <button>set</button>
+                <button onClick={this.setSettings}>set</button>
 
           </div>
           </div>

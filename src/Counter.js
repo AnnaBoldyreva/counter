@@ -7,25 +7,25 @@ import Reset from "./components/Reset/Reset";
 class Counter extends React.Component{
 
 
-  state = {
-    currentValue: 0,
-    maxValue: 5,
-    initialValue: 0
-  };
+  // state = {
+  //   currentValue: 0,
+  //   maxValue: 5,
+  //   initialValue: 0
+  // };
 
-  increment = (currentValue)=> {
-    let newVal = currentValue + 1;
-    this.setState(
-        {currentValue: newVal}
-    );
-    if (this.state.currentValue === this.state.maxValue){
+  // increment = (currentValue)=> {
+  //   let newVal = currentValue + 1;
+  //   this.setState(
+  //       {currentValue: newVal}
+  //   );
+  //   if (this.state.currentValue === this.state.maxValue){
+  //
+  //   }
+  // };
 
-    }
-  };
-
-  reset = ()=>{
-    this.setState({currentValue: this.state.initialValue})
-  };
+  // reset = ()=>{
+  //   this.setState({currentValue: this.state.initialValue})
+  // };
 
 
 
@@ -36,9 +36,9 @@ class Counter extends React.Component{
         <div className="App">
           <div>
             <div className='border'>
-          <Screen data={this.state.currentValue}/>
-          <Increment data={this.state} increment={this.increment}/>
-          <Reset data={this.state} reset={this.reset}/>
+          <Screen state={this.props.state.currentValue}/>
+          <Increment state={this.props.state} increment={this.props.increment}/>
+          <Reset state={this.props.state} reset={this.props.reset}/>
           </div>
           </div>
 
