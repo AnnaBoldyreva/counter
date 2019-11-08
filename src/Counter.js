@@ -7,29 +7,6 @@ import Reset from "./components/Reset/Reset";
 class Counter extends React.Component{
 
 
-  // state = {
-  //   currentValue: 0,
-  //   maxValue: 5,
-  //   initialValue: 0
-  // };
-
-  // increment = (currentValue)=> {
-  //   let newVal = currentValue + 1;
-  //   this.setState(
-  //       {currentValue: newVal}
-  //   );
-  //   if (this.state.currentValue === this.state.maxValue){
-  //
-  //   }
-  // };
-
-  // reset = ()=>{
-  //   this.setState({currentValue: this.state.initialValue})
-  // };
-
-
-
-
 
   render = () => {
     return (

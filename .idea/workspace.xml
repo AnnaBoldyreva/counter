@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="269d2a56-b5ad-4703-a596-7eca8e5e2e28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="269d2a56-b5ad-4703-a596-7eca8e5e2e28" name="Default Changelist" comment="add two screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Increment/Increment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Increment/Increment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reset/Reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reset/Reset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Screen/Screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Screen/Screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Settings.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +20,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Increment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -33,16 +28,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/Increment" />
+      <recent name="$PROJECT_DIR$/src/components/Screen" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Reset" />
       <recent name="$PROJECT_DIR$/src/components/Increment" />
       <recent name="$PROJECT_DIR$/src/components/Screen" />
       <recent name="$PROJECT_DIR$/src/components" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/Increment" />
-      <recent name="$PROJECT_DIR$/src/components/Screen" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -82,7 +77,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571060386239</updated>
-      <workItem from="1571060388352" duration="4175000" />
+      <workItem from="1571060388352" duration="5959000" />
+      <workItem from="1571651424677" duration="311000" />
+      <workItem from="1573113557928" duration="4205000" />
+      <workItem from="1573220152831" duration="442000" />
+      <workItem from="1573220752350" duration="1073000" />
     </task>
     <task id="LOCAL-00001" summary="create three components and css module for them">
       <created>1571061572844</created>
@@ -91,7 +90,42 @@
       <option name="project" value="LOCAL" />
       <updated>1571061572844</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create state + functions">
+      <created>1571064871736</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571064871736</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add css styles">
+      <created>1571067098273</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571067098273</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create universal component for counter">
+      <created>1573113693981</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573113693981</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add two screen">
+      <created>1573118100112</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573118100112</updated>
+    </task>
+    <task id="LOCAL-00006" summary="now have one state at App component">
+      <created>1573221616743</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573221616743</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +136,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -110,6 +146,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create three components and css module for them" />
-    <option name="LAST_COMMIT_MESSAGE" value="create three components and css module for them" />
+    <MESSAGE value="create state + functions" />
+    <MESSAGE value="add css styles" />
+    <MESSAGE value="create universal component for counter" />
+    <MESSAGE value="add two screen" />
+    <MESSAGE value="now have one state at App component" />
+    <option name="LAST_COMMIT_MESSAGE" value="now have one state at App component" />
   </component>
 </project>
