@@ -6,25 +6,11 @@ import Settings from "./Settings";
 class App extends React.Component{
 
     state = {
-        currentValue: 0,
+        currentValue: [],
         maxValue: '',
         initialValue: 0
     };
 
-    increment = (currentValue)=> {
-        let newVal = currentValue + 1;
-        this.setState(
-            {currentValue: newVal}
-        );
-        if (this.state.currentValue === this.state.maxValue){
-
-        }
-    };
-
-
-    reset = ()=>{
-        this.setState({currentValue: this.state.initialValue})
-    };
 
     setMaxVal = (newMaxValue) => {
       let newMaxVal =  newMaxValue;
@@ -36,8 +22,23 @@ class App extends React.Component{
     setStartVal = (newStartValue) => {
         let newStartVal = newStartValue;
         this.setState({
-            initialValue: newStartVal
+            currentValue: newStartVal
         })
+    };
+
+    increment = (currentValue)=> {
+        debugger;
+        let newVal = currentValue + 1;
+        this.setState(
+            {currentValue: newVal}
+        );
+        if (this.state.currentValue === this.state.maxValue){
+
+        }
+    };
+
+    reset = ()=>{
+        this.setState({currentValue: this.state.initialValue})
     };
 
   render = () => {
