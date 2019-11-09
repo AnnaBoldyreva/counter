@@ -1,3 +1,8 @@
 .inc{
 display: inline;
 }
+
+.error{
+    color: red;
+    border-color: indigo;
+}

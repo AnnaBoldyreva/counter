@@ -12,34 +12,36 @@ class App extends React.Component{
 
     };
 
-
-
-    // setMaxVal = (newMaxValue) => {
-    //   let newMaxVal =  newMaxValue;
-    //   this.setState({
-    //       maxValue: newMaxVal
-    //   });
-    // };
-
     setStartVal = (newStartValue) => {
         let newStartVal = newStartValue;
         this.setState({
             currentValue: newStartVal
-        })
+        },
+            () => {
+                this.saveState();
+            }
+            )
     };
 
     setMaxVal = (newMaxValue) => {
         let newMax = newMaxValue;
         this.setState({
             maxValue: newMax
-        })
+        },
+            () => {
+                this.saveState();
+            }
+        )
     };
 
     increment = (currentValue)=> {
         let newVal = currentValue ;
         newVal ++ ;
         this.setState(
-            {currentValue: newVal }
+            {currentValue: newVal },
+            () => {
+                this.saveState();
+            }
         );
         // if (this.state.currentValue === this.state.maxValue){
         //
@@ -47,7 +49,27 @@ class App extends React.Component{
     };
 
     reset = ()=>{
-        this.setState({currentValue: this.state.initialValue})
+        this.setState({currentValue: this.state.initialValue},
+        () => {
+            this.saveState();
+        })
+    };
+
+    componentDidMount() {
+        this.restoreState();
+    }
+
+    saveState = () => {
+        let stateAsString = JSON.stringify(this.state);
+        localStorage.setItem('counter', stateAsString)
+    };
+
+    restoreState = () => {
+        let stateAsString = localStorage.getItem('counter');
+        if (stateAsString) {
+            let state = JSON.parse(stateAsString);
+            this.setState(state);
+        }
     };
 
 

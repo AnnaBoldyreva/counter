@@ -12,7 +12,11 @@ state = {
         let newMaxVal = parseInt(e.currentTarget.value);
     this.setState({
         maxValue: newMaxVal
-    })
+    },
+        () => {
+            this.saveState();
+        }
+        )
     };
 
 
@@ -20,7 +24,11 @@ state = {
         let startValue = parseInt(e.currentTarget.value);
         this.setState({
             currentValue: startValue
-        })
+        },
+            () => {
+                this.saveState();
+            }
+            )
     };
 
 setSettings = () => {
@@ -30,6 +38,22 @@ setSettings = () => {
    this.props.setStartVal(newStartValue)
 };
 
+    componentDidMount() {
+        this.restoreState();
+    }
+
+    saveState = () => {
+        let stateAsString = JSON.stringify(this.state);
+        localStorage.setItem('counterValue', stateAsString)
+    };
+
+    restoreState = () => {
+        let stateAsString = localStorage.getItem('counterValue');
+        if (stateAsString) {
+            let state = JSON.parse(stateAsString);
+            this.setState(state);
+        }
+    };
 
 
 
