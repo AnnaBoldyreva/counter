@@ -9,15 +9,17 @@ class App extends React.Component{
         currentValue: [],
         maxValue: [],
         initialValue: 0
+
     };
 
 
-    setMaxVal = (newMaxValue) => {
-      let newMaxVal =  newMaxValue;
-      this.setState({
-          maxValue: newMaxVal
-      });
-    };
+
+    // setMaxVal = (newMaxValue) => {
+    //   let newMaxVal =  newMaxValue;
+    //   this.setState({
+    //       maxValue: newMaxVal
+    //   });
+    // };
 
     setStartVal = (newStartValue) => {
         let newStartVal = newStartValue;
@@ -26,26 +28,28 @@ class App extends React.Component{
         })
     };
 
+    setMaxVal = (newMaxValue) => {
+        let newMax = newMaxValue;
+        this.setState({
+            maxValue: newMax
+        })
+    };
+
     increment = (currentValue)=> {
-        let newVal = currentValue + 1;
+        let newVal = currentValue ;
+        newVal ++ ;
         this.setState(
             {currentValue: newVal }
         );
-        if (this.state.currentValue === this.state.maxValue){
-
-        }
+        // if (this.state.currentValue === this.state.maxValue){
+        //
+        // }
     };
-
-    // increment = (newStartValue) => {
-    //     let newVal = newStartValue + 1;
-    //     this.setState({
-    //         currentValue: newVal
-    //     })
-    // };
 
     reset = ()=>{
         this.setState({currentValue: this.state.initialValue})
     };
+
 
   render = () => {
     return (

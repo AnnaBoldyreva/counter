@@ -10,9 +10,10 @@ class Increment extends React.Component{
     };
 
   render = () => {
+      let isDisabled = this.props.state.currentValue === this.props.state.maxValue;
     return (
         <div className={styles.inc}>
-            <button onClick={this.incButtonClick}>inc</button>
+            <button onClick={this.incButtonClick} disabled={isDisabled}>inc</button>
 
         </div>
     );

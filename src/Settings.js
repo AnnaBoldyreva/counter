@@ -9,20 +9,23 @@ state = {
 };
 
     onChangeMaxValue = (e) => {
-        this.setState({
-            maxValue: e.currentTarget.value
-        })
+        let newMaxVal = parseInt(e.currentTarget.value);
+    this.setState({
+        maxValue: newMaxVal
+    })
     };
 
+
     onChangeStartValue = (e) => {
+        let startValue = parseInt(e.currentTarget.value);
         this.setState({
-            currentValue: e.currentTarget.value
+            currentValue: startValue
         })
     };
 
 setSettings = () => {
-   let newMaxValue = this.state.maxValue;
-   this.props.setMaxVal(newMaxValue);
+    let newMaxValue = this.state.maxValue;
+    this.props.setMaxVal(newMaxValue);
    let newStartValue = this.state.currentValue;
    this.props.setStartVal(newStartValue)
 };
@@ -37,7 +40,7 @@ setSettings = () => {
         <div className="App">
           <div>
             <div className='border'>
-                max value: <input type="number" name="quantity" min="1" max="11" onChange={this.onChangeMaxValue} value={this.state.maxValue}
+                max value: <input type="number" name="quantity" min="1" max="11"  onChange={this.onChangeMaxValue} value={this.state.maxValue}
             />
                 <br/>
                 start value: <input type="number" name="quantity" min="0" max="10" id='firstInput' onChange={this.onChangeStartValue} value={this.state.currentValue}/>
