@@ -74,9 +74,11 @@ class App extends React.Component{
 
 
   render = () => {
+
+      let errorFilter = this.state.currentValue === this.state.maxValue ? 'error' : ' ';
     return (
         <div className='allApp' >
-         <Counter state={this.state} increment={this.increment} reset={this.reset} />
+         <Counter state={this.state} increment={this.increment} reset={this.reset} className={errorFilter} />
         <Settings state={this.state} setMaxVal={this.setMaxVal} setStartVal={this.setStartVal}/>
 
         </div>

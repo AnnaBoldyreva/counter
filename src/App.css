@@ -8,7 +8,7 @@
   color: ghostwhite;
   box-shadow: 0 0 10px #cccccc;
 
-  background-color: #34495e;
+  background-color: thistle;
   width: 100px;
   height: 100px;
 }
@@ -19,4 +19,8 @@
   justify-content: center;
 }
 
+.error{
+  color: red;
+  border-color: indigo;
+}
 

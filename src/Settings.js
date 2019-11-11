@@ -5,7 +5,8 @@ class Settings extends React.Component{
 
     state = {
     maxValue: [],
-    currentValue: []
+    currentValue: [],
+        error: false
 };
 
     onChangeMaxValue = (e) => {
@@ -55,6 +56,7 @@ class Settings extends React.Component{
 
 
   render = () => {
+
     return (
         <div className="App">
           <div>

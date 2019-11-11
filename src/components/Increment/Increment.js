@@ -22,6 +22,7 @@ class Increment extends React.Component{
 
   render = () => {
       let isDisabled = this.props.state.currentValue === this.props.state.maxValue;
+
       // let errorFilter = this.state.error ? 'error' : '';
     return (
         <div className={styles.inc}>
